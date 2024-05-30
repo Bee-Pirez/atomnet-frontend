@@ -17,17 +17,84 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  background-color: #04040E;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+main {
+  /* padding: 0 80px; */
+  color: white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+  }
+
+  label {
+    font-family: "Inter", sans-serif;
+  }
+
+}
+
+/* @media (max-width: 1023px) {
+  main{
+    padding: 0 32px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  main{
+    padding: 0 16px;
+  }
+  
+} */
+
+:root {
+  --h1-size-lg: 64px;
+  --h1-size-md: 48px;
+  --h1-size-sm: 40px;
+
+  --h2-size-lg: 48px;
+  --h2-size-md: 30px;
+  --h2-size-sm: 26px;
+
+  --h3-size-lg: 24px;
+
+  --h4-size: 24px;
+
+  --p-size-lg: 16px;
+  --p-size-sm: 14px;
+
+
+
+  --normalBlue: #302fbb;
+  --hoverBlue: #262696;
+  --darkerBlue: #111041;
+  --darkBlue: #24238c;
+
+  --normalViolet: #101329;
+
+  --normalLigthBlue: #00fefb;
+
+  --lightGray: #ccc8c8;
+
+  --mediumGray: #9e9a9a;
+
+  --darkGray: #4e4e4e;
 }
