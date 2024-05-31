@@ -11,6 +11,9 @@
   "dependencies": {
     "@hookform/resolvers": "^3.4.2",
     "@nextui-org/react": "^2.3.6",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.19",
     "axios": "^1.7.2",

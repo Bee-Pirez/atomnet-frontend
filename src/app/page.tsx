@@ -1,20 +1,32 @@
 "use client";
+import CompanySection from "@/components/homeNoAuth/companySection";
 import HeaderNoAuth from "../components/homeNoAuth/headerNoAuth";
 // import styles from "./styles/page.module.css";
 // import "./styles/globals.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { use, useEffect } from "react";
+import ServiceSection from "@/components/homeNoAuth/serviceSection";
+import InformationSection from "@/components/homeNoAuth/informationSection";
+import MemberCard from "@/components/homeNoAuth/memberCard";
+import SliderSection from "@/components/homeNoAuth/sliderSection/index";
+import CTASection from "@/components/homeNoAuth/ctaSection";
+import Footer from "@/components/common/footer";
 
 export default function HomeNoAuth() {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <>
       <main>
         <HeaderNoAuth></HeaderNoAuth>
-        <div className="relative isolate px-6 pt-4 lg:px-8">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-duration="1600"
+          className="relative isolate  py-20 px-4 sm:px-16 md:px-32 lg:px-50 lg:py-20"
+        >
           <div
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             aria-hidden="true"
@@ -31,8 +43,11 @@ export default function HomeNoAuth() {
             <div className=" sm:mb-12 sm:flex sm:justify-center"></div>
             <div className="text-center">
               <h1 className="text-h1-sm sm:text-h1-sm xl:text-h1-lg md:text-h1-md">
-                Alçando organizações à <strong className="text-normalLigthBlue">excelência</strong> em
-                <strong className="text-normalLigthBlue">segurança da informação</strong>
+                Alçando organizações à{" "}
+                <strong className="text-normalLigthBlue">excelência</strong> em
+                <strong className="text-normalLigthBlue">
+                  segurança da informação
+                </strong>
               </h1>
               <p className="mt-6 text-p-sm xl:text-p-lg sm:text-p-sm  text-gray-400">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -63,6 +78,31 @@ export default function HomeNoAuth() {
             />
           </div>
         </div>
+        <div data-aos="fade-left" data-aos-duration="1200">
+          <CompanySection></CompanySection>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1200">
+          <ServiceSection></ServiceSection>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1300"
+        >
+          <InformationSection></InformationSection>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1350">
+          <SliderSection></SliderSection>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
+          <CTASection></CTASection>
+        </div>
+        <Footer></Footer>
       </main>
     </>
   );

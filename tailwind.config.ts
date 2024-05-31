@@ -18,6 +18,7 @@ const config: Config = {
         normalBlue: "var(--normalBlue)",
         hoverBlue: "var(--hoverBlue)",
         darkerBlue: "var(--darkerBlue)",
+        primary:"var( --primary)",
         darkBlue: "var(--darkBlue)",
         normalViolet: "var(--normalViolet)",
         normalLigthBlue: "var(--normalLigthBlue)",

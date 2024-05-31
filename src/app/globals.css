@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './styles/serviceCard.css';
+@import './styles/serviceSection.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -88,6 +90,7 @@ main {
   --darkerBlue: #111041;
   --darkBlue: #24238c;
 
+  --primary: #04040e;
   --normalViolet: #101329;
 
   --normalLigthBlue: #00fefb;
