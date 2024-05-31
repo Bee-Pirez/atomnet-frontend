@@ -1,0 +1,176 @@
+
+.title2{
+  padding-top: 8px;
+  font-size: var(--h2-size-lg);
+}
+
+.paragraph{
+  font-size: var(--p-size-lg);
+}
+
+.main {
+  background-image: url('/imgBackgroundAuth.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  margin: 0 80px;
+}
+
+.mainContent > section,
+.mainContent > div {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgLogo {
+  width: 200px;
+}
+
+.imgLogoForm{
+  display: none;
+  width: 100px;
+}
+
+.formTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+
+  .link{
+    color: #3275ff;
+  }
+}
+
+.form {
+  width: 600px;
+  padding: 40px 56px;
+  margin: 0 auto;
+  background: #fff;
+  color: black;
+  border-radius: 4px;
+}
+
+
+
+.forContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--darkGray); /* Use a variável global */
+}
+
+.input {
+  background-color: #e7e5e5;
+  color: var(--darkGray); /* Use a variável global */
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+
+  &::placeholder {
+    color: var(--lightGray);
+  }
+
+  &:focus {
+    background-color: transparent;
+    /* border-color: var(--lightGray); */
+    color: var(--darkGray); /* Use a variável global */
+    box-shadow: none;
+  }
+}
+
+.button {
+  display: block;
+  padding: 8px;
+  border: 1px solid var(--normalBlue); /* Use as variáveis de cor globais */
+  background-color: var(--normalBlue); /* Use as variáveis de cor globais */
+  color: white;
+  cursor: pointer;
+  margin-top: 24px;
+
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    border-color: var(--darkBlue); /* Use as variáveis de cor globais */
+    background-color: var(--darkBlue); /* Use as variáveis de cor globais */
+  }
+}
+
+@media (max-width: 1279px) {
+  .mainContent {
+    grid-template-columns: 1fr;
+    margin: 0 20px; /* Reduz a margem lateral para melhorar o espaçamento */
+  }
+
+  .mainContent > section:first-of-type {
+    display: none; /* Esconde a primeira seção */
+  }
+
+  .mainContent > div {
+    grid-column: span 2; /* Ocupa todo o grid em telas menores */
+  }
+
+  .imgLogoForm{
+    display: block;
+  }
+}
+
+@media (max-width: 1023px) {
+  
+  .title2{
+    font-size: var(--h2-size-md);
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .paragraph{
+    font-size: var(--p-size-sm);
+  }
+  
+}
+
+@media (max-width: 640px) {
+  .main {
+    background-image: none; /* Remove o plano de fundo */
+  }
+
+  .mainContent {
+    margin: 0;
+  }
+
+  .form {
+    padding: 24px 16px;
+    width: 100vw; 
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+  }
+
+  .forContent {
+    gap: 24px;
+  }
+}

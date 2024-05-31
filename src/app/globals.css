@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import './styles/serviceCard.css';
 @import './styles/serviceSection.css';
+@import './styles/registerLogin.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
