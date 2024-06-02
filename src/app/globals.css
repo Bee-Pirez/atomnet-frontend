@@ -4,6 +4,7 @@
 @import './styles/serviceCard.css';
 @import './styles/serviceSection.css';
 @import './styles/registerLogin.css';
+@import './styles/quizCard.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;

@@ -65,6 +65,20 @@ const authService = {
       throw error;
     }
   },
+
+  logout: () => {
+    try {
+      // Limpar o token do sessionStorage
+      sessionStorage.removeItem("atomnet-token");
+      console.log("Token removido do sessionStorage");
+  
+      // Limpar todo o localStorage
+      localStorage.clear();
+      console.log("LocalStorage limpo");
+    } catch (error) {
+      console.error("Erro ao fazer logout:", error);
+    }
+  },
 };
 
 

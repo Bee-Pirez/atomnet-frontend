@@ -12,7 +12,7 @@ const Footer = () => {
       />
       <p className="flex items-center gap-2">
         <Copyright size={16} />
-        2024 AtomNet | Todos os direitos reservados
+        2024 AtomTechnology | Todos os direitos reservados
       </p>
     </footer>
   );
